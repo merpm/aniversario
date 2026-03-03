@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Aniversario</title>
+<link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<text y='.9em' font-size='90'>❤️‍🔥</text>
+</svg>">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-hearts"></div>
+
+    <button class="music-floating" id="musicButton" type="button" aria-label="Controlar música">♫</button>
+    <audio id="loveSong" src="assets/audio/song.mp3" loop></audio>
+
+    <main class="page">
+      <section class="hero">
+        <h1>Feliz aniversario jose ♡</h1>
+        <p class="hero-sub">♡ para mi ojitos, con todo mi amor</p>
+
+        <div class="mailbox-scene">
+          <!-- CARTA PNG -> Momentos -->
+          <button class="floating-sticker sticker-carta open-trigger" data-open="momentsModal" type="button" aria-label="Abrir momentos">
+            <img src="assets/img/carta.png" alt="Carta" />
+          </button>
+
+          <!-- PELUCHE PNG -> 10 cosas -->
+          <button class="floating-sticker sticker-peluche open-trigger" data-open="reasonsModal" type="button" aria-label="Abrir 10 cosas">
+            <img src="assets/img/peluche.png" alt="Peluche" />
+          </button>
+
+          <!-- SOBRE PNG -> Videos -->
+          <button class="floating-sticker sticker-sobre open-trigger" data-open="videosModal" type="button" aria-label="Abrir videítos">
+            <img src="assets/img/sobre.png" alt="Sobre" />
+          </button>
+
+          <!-- BUZÓN -> Carta dedicatoria -->
+          <button class="mailbox-card open-trigger" data-open="letterModal" type="button" aria-label="Abrir carta dedicatoria">
+            <div class="mail-arch"></div>
+            <div class="mail-title">postcards</div>
+            <div class="mail-center-envelope">
+              <span>para jose</span>
+            </div>
+            <div class="mail-door"></div>
+            <div class="mail-legs"></div>
+          </button>
+        </div>
+      </section>
+
+      <section class="time-area">
+        <article class="calendar-card">
+          <div class="calendar-top">
+            <div class="calendar-heart-wrap">
+              <span class="calendar-heart-icon">❤</span>
+            </div>
+            <p>aquí comenzó lo nuestro</p>
+          </div>
+
+          <h3>MARZO</h3>
+
+          <div class="weekdays">
+            <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
+          </div>
+
+          <div class="days-grid">
+            <span class="empty"></span><span class="empty"></span><span class="empty"></span>
+            <span>1</span><span>2</span><span class="marked-day">3 ❤</span><span>4</span>
+
+            <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+            <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+            <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+            <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span class="empty"></span>
+          </div>
+
+          <div class="calendar-footer">♡</div>
+        </article>
+
+        <article class="time-card">
+          <div class="time-card-head">
+            <h2>Nuestro tiempo juntos</h2>
+            <span>desde 03 · 03 · 2023</span>
+          </div>
+
+          <div class="count-grid">
+            <div class="count-box"><strong id="days">0</strong><span>días</span></div>
+            <div class="count-box"><strong id="hours">0</strong><span>horas</span></div>
+            <div class="count-box"><strong id="minutes">0</strong><span>minutos</span></div>
+            <div class="count-box"><strong id="seconds">0</strong><span>segundos</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- MODAL CARTA DEDICATORIA -->
+    <div class="modal-shell" id="letterModal">
+      <div class="modal-card letter-modal-card">
+        <button class="close-x close-modal" type="button">✕</button>
+
+        <div class="letter-stamp-border">
+          <div class="letter-head">
+            <div class="letter-title-block">
+              <p class="small-label">TO:</p>
+              <p class="script-name">jose</p>
+              <div class="line"></div>
+
+              <p class="small-label from-label">FROM:</p>
+              <p class="script-name">Mer</p>
+              <div class="line"></div>
+            </div>
+
+            <div class="stamp-group">
+              <div class="stamp">❤</div>
+              <div class="stamp">✿</div>
+            </div>
+          </div>
+
+          <h2 class="letter-main-title">Mi amor, jose</h2>
+
+          <div class="letter-body">
+            <p>
+              No sé en qué momento te volviste parte de mis días favoritos, pero
+              desde que llegaste a mi vida todo se siente más bonito, más
+              tranquilo y más lleno de amor.
+            </p>
+            <p>
+              Gracias por estar conmigo, por tu cariño, por tu paciencia y por
+              hacerme sentir tan especial.
+            </p>
+            <p>
+              Hoy solo quiero recordarte que te elijo con el corazón lleno de
+              amor, y que deseo seguir escribiendo más recuerdos contigo.
+            </p>
+
+            <p class="letter-sign">
+              Con todo mi amor,<br />
+              <span>Mer ♡</span>
+            </p>
+          </div>
+
+          <div class="letter-bottom-row">
+            <div class="letter-date">03 / 03 / 2026</div>
+            <div class="postmark">Felices 3 años</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL MOMENTOS -->
+    <div class="modal-shell" id="momentsModal">
+      <div class="modal-card scrapbook-modal">
+        <button class="close-x close-modal" type="button">✕</button>
+
+        <div class="modal-header">
+          <h2>Momentos</h2>
+        </div>
+
+        <div class="moments-grid" id="momentsGrid"></div>
+      </div>
+    </div>
+
+    <!-- MODAL 10 COSAS -->
+    <div class="modal-shell" id="reasonsModal">
+      <div class="modal-card reasons-modal">
+        <button class="close-x close-modal" type="button">✕</button>
+
+        <div class="modal-header">
+          <h2>10 cosas que amo de ti, ojitos</h2>
+        </div>
+
+        <div class="reasons-grid" id="reasonsGrid"></div>
+      </div>
+    </div>
+
+    <!-- MODAL VIDEOS -->
+    <div class="modal-shell" id="videosModal">
+      <div class="modal-card videos-modal">
+        <button class="close-x close-modal" type="button">✕</button>
+
+        <div class="modal-header">
+          <h2>MY LOVE</h2>
+          <br>
+        </div>
+
+        <div class="video-cards-grid" id="videoCardsGrid"></div>
+      </div>
+    </div>
+
+    <!-- MODAL ZOOM FOTO -->
+    <div class="modal-shell image-zoom-shell" id="imageZoomModal">
+      <div class="image-zoom-card">
+        <button class="close-x close-modal" type="button">✕</button>
+        <img id="zoomImage" src="" alt="recuerdo ampliado" />
+        <p id="zoomCaption"></p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
